@@ -29,6 +29,7 @@ A simple slide out menu inspired by AKSwiftSlideMenu. An easy way to add a slide
   s.social_media_url = 'https://twitter.com/jackcolley'
 
   s.ios.deployment_target = '9.0'
+  s.swift_version = '4.0'
 
   s.source_files = 'JCSlideMenu/Classes/**/*'
   
