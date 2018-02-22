@@ -8,13 +8,12 @@
 import Foundation
 import UIKit
 
-class SlideableViewController: UIViewController, SlideMenuDelegate {
+open class SlideableViewController: UIViewController, SlideMenuDelegate {
 
-    func slideMenuTransitionToController(controller: UIViewController) {
+    open func slideMenuTransitionToController(controller: UIViewController) {
         let topViewController: UIViewController = self.navigationController!.topViewController!
 
         if(topViewController.restorationIdentifier == controller.restorationIdentifier) {
-            print("Switching to same vc")
             self.navigationItem.leftBarButtonItem?.tag = 0
         } else {
             let transition = CATransition()
@@ -27,7 +26,7 @@ class SlideableViewController: UIViewController, SlideMenuDelegate {
         }
     }
 
-    func addSlideMenuButton(){
+    open func addSlideMenuButton(){
         let btnShowMenu = UIButton(type: UIButtonType.system)
         btnShowMenu.setImage(self.defaultMenuImage(), for: UIControlState())
         btnShowMenu.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
@@ -58,11 +57,11 @@ class SlideableViewController: UIViewController, SlideMenuDelegate {
         return defaultMenuImage;
     }
 
-    @objc func onSlideMenuButtonPressed(_ sender : UIButton){
+    @objc open func onSlideMenuButtonPressed(_ sender : UIButton){
         if (sender.tag == 10)
         {
             let viewMenuBack : UIView = view.subviews.last!
-            let childVC = self.childViewControllers.last as? LeftMenuViewController
+            let childVC = self.childViewControllers.last as? BaseMenu
 
             UIView.animate(withDuration: 0.3, animations: { () -> Void in
                 var frameMenu : CGRect = viewMenuBack.frame
@@ -87,10 +86,12 @@ class SlideableViewController: UIViewController, SlideMenuDelegate {
         sender.tag = 10
 
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let menuVC : LeftMenuViewController = storyboard.instantiateViewController(withIdentifier: "leftMenuVC") as! LeftMenuViewController
-        //        menuVC.btnMenu = sender
+        let menuVC: BaseMenu = storyboard.instantiateViewController(withIdentifier: "leftMenuVC") as! BaseMenu
+
         menuVC.delegate = self
+
         UIApplication.shared.delegate!.window!?.addSubview(menuVC.view)
+
         self.addChildViewController(menuVC)
         menuVC.view.layoutIfNeeded()
 

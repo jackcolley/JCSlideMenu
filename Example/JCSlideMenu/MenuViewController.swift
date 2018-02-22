@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import JCSlideMenu
 
-class MenuViewController: UIViewController {
+class MenuViewController: BaseMenu {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,12 +17,16 @@ class MenuViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func homeButtonPressed(sender: UIButton) {
+        self.onCloseMenuClick(controller: self.storyboard!.instantiateInitialViewController()!)
+    }
+
+    @IBAction func aboutButtonPressed(sender: UIButton) {
+        let aboutController = self.storyboard?.instantiateViewController(withIdentifier: "aboutNavController")
+
+        self.onCloseMenuClick(controller: aboutController!)
     }
     
-
     /*
     // MARK: - Navigation
 

@@ -8,6 +8,6 @@
 import Foundation
 import UIKit
 
-protocol SlideMenuDelegate {
+public protocol SlideMenuDelegate {
     func slideMenuTransitionToController(controller: UIViewController)
 }

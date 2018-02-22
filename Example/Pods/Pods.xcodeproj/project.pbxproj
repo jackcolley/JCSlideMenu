@@ -15,6 +15,7 @@
 		90FC3080B187A267967FB4933161FBDE /* Pods-JCSlideMenu_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9EBBC5092E7C52560B98C06C4235262 /* Pods-JCSlideMenu_Tests-dummy.m */; };
 		A5A221C2203EEFA40056EDCD /* SlideableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A221C1203EEFA40056EDCD /* SlideableViewController.swift */; };
 		A5A221C4203EEFE30056EDCD /* SlideMenuDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A221C3203EEFE30056EDCD /* SlideMenuDelegate.swift */; };
+		A5A221C6203EF0AA0056EDCD /* BaseMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A221C5203EF0AA0056EDCD /* BaseMenu.swift */; };
 		AD2BF9640B3E8840F8A04EB30712951F /* JCSlideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DAAFD86BCAF71CD6DBB55ADAF0BEC20 /* JCSlideMenu-dummy.m */; };
 		D5236D8FCC02C1AA1F6B7C98B14A4D8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		F9410ECDBD1BC667BACE91170A40C001 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
@@ -55,6 +56,7 @@
 		9DAAFD86BCAF71CD6DBB55ADAF0BEC20 /* JCSlideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JCSlideMenu-dummy.m"; sourceTree = "<group>"; };
 		A5A221C1203EEFA40056EDCD /* SlideableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SlideableViewController.swift; path = JCSlideMenu/Classes/SlideableViewController.swift; sourceTree = "<group>"; };
 		A5A221C3203EEFE30056EDCD /* SlideMenuDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SlideMenuDelegate.swift; path = JCSlideMenu/Classes/SlideMenuDelegate.swift; sourceTree = "<group>"; };
+		A5A221C5203EF0AA0056EDCD /* BaseMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BaseMenu.swift; path = JCSlideMenu/Classes/BaseMenu.swift; sourceTree = "<group>"; };
 		A5FEF96AC7F2193D7FA8F0074B6C3532 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A83AB56E8151C1AC93AE76A7F829C4A2 /* JCSlideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JCSlideMenu-umbrella.h"; sourceTree = "<group>"; };
 		B04138880FD9170FE9D2FE846743FB85 /* JCSlideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JCSlideMenu.modulemap; sourceTree = "<group>"; };
@@ -201,9 +203,10 @@
 			isa = PBXGroup;
 			children = (
 				A5A221C1203EEFA40056EDCD /* SlideableViewController.swift */,
+				A5A221C3203EEFE30056EDCD /* SlideMenuDelegate.swift */,
+				A5A221C5203EF0AA0056EDCD /* BaseMenu.swift */,
 				0D21E41BAA1A393B3702BFF3C8D01363 /* Pod */,
 				FF42B9E11D4771D0DA3F4D3D9D06EA09 /* Support Files */,
-				A5A221C3203EEFE30056EDCD /* SlideMenuDelegate.swift */,
 			);
 			name = JCSlideMenu;
 			path = ../..;
@@ -355,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD2BF9640B3E8840F8A04EB30712951F /* JCSlideMenu-dummy.m in Sources */,
+				A5A221C6203EF0AA0056EDCD /* BaseMenu.swift in Sources */,
 				A5A221C2203EEFA40056EDCD /* SlideableViewController.swift in Sources */,
 				A5A221C4203EEFE30056EDCD /* SlideMenuDelegate.swift in Sources */,
 			);

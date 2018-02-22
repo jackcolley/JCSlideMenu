@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import JCSlideMenu
 
-class HomeViewController: UIViewController {
+class HomeViewController: SlideableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +20,10 @@ class HomeViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    @IBAction func menuButtonPressed(sender: UIButton) {
+        self.onSlideMenuButtonPressed(sender)
     }
     
 
