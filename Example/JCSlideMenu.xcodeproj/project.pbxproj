@@ -28,8 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2CA777D198EEA76263856603 /* JCSlideMenu.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JCSlideMenu.podspec; path = ../JCSlideMenu.podspec; sourceTree = "<group>"; };
-		38CD50A5125F415C3396EF62 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2CA777D198EEA76263856603 /* JCSlideMenu.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JCSlideMenu.podspec; path = ../JCSlideMenu.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		38CD50A5125F415C3396EF62 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3FD728E58F4B67C89A0D9EAF /* Pods-JCSlideMenu_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCSlideMenu_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCSlideMenu_Tests/Pods-JCSlideMenu_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5BD3BBE8F6E3C86918E9D0F4 /* Pods_JCSlideMenu_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCSlideMenu_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* JCSlideMenu_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCSlideMenu_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,7 +46,7 @@
 		93F0E551E8746F1A865B43F1 /* Pods-JCSlideMenu_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCSlideMenu_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JCSlideMenu_Example/Pods-JCSlideMenu_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D51493CBF153DDCC73D528FF /* Pods-JCSlideMenu_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCSlideMenu_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JCSlideMenu_Tests/Pods-JCSlideMenu_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		EE1B2739184A512C89497A08 /* Pods_JCSlideMenu_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCSlideMenu_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F361EC31F702E0B84875BEA3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F361EC31F702E0B84875BEA3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

@@ -1,0 +1,22 @@
+{
+  "name": "JCSlideMenu",
+  "version": "0.1.0",
+  "summary": "A short description of JCSlideMenu.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/jackcolley/JCSlideMenu",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "jackcolley": "jack@jackcolley.co.uk"
+  },
+  "source": {
+    "git": "https://github.com/jackcolley/JCSlideMenu.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "JCSlideMenu/Classes/**/*"
+}

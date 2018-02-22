@@ -1,0 +1,6 @@
+framework module Pods_JCSlideMenu_Example {
+  umbrella header "Pods-JCSlideMenu_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

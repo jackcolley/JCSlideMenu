@@ -1,0 +1,6 @@
+framework module JCSlideMenu {
+  umbrella header "JCSlideMenu-umbrella.h"
+
+  export *
+  module * { export * }
+}

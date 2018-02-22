@@ -1,0 +1,16 @@
+PODS:
+  - JCSlideMenu (0.1.0)
+
+DEPENDENCIES:
+  - JCSlideMenu (from `../`)
+
+EXTERNAL SOURCES:
+  JCSlideMenu:
+    :path: ../
+
+SPEC CHECKSUMS:
+  JCSlideMenu: 3f521ce2f1ec7ea807fb35ef84e65a3158eeae6a
+
+PODFILE CHECKSUM: 41002054240727b7888bed639beb97203a395a65
+
+COCOAPODS: 1.4.0
