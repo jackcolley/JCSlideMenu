@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'JCSlideMenu_Example' do
+  pod 'JCSlideMenu', :path => '../'
+
+  target 'JCSlideMenu_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
