@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JCSlideMenu'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A simple slide out menu inspired by AKSwiftSlideMenu'
 
 # This description is used to generate tags and improve search results.

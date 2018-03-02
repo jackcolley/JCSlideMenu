@@ -11,9 +11,15 @@ import UIKit
 open class SlideableViewController: UIViewController, SlideMenuDelegate {
 
     open func slideMenuTransitionToController(controller: UIViewController) {
-        let topViewController: UIViewController = self.navigationController!.topViewController!
+        var topViewController: UIViewController!
+        if let navigationTop = self.navigationController?.topViewController {
+            topViewController = navigationTop
+        } else {
+            topViewController = self
+        }
 
-        if(topViewController.restorationIdentifier == controller.restorationIdentifier) {
+        if topViewController.restorationIdentifier == controller.restorationIdentifier {
+            print("Switching to same vc")
             self.navigationItem.leftBarButtonItem?.tag = 0
         } else {
             let transition = CATransition()
@@ -22,7 +28,11 @@ open class SlideableViewController: UIViewController, SlideMenuDelegate {
             transition.subtype = kCATransitionFromRight
             transition.timingFunction = CAMediaTimingFunction(name:kCAMediaTimingFunctionEaseInEaseOut)
             view.window!.layer.add(transition, forKey: kCATransition)
-            self.navigationController?.present(controller, animated: false)
+            if let navController = self.navigationController {
+                navController.present(controller, animated: false)
+            } else {
+                self.present(controller, animated: false, completion: nil)
+            }
         }
     }
 
